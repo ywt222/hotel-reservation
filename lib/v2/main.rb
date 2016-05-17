@@ -12,6 +12,6 @@ class Main
   customer_type = CustomerType.get_customer_type(input_info)
   hotel_list = HotelDetail.get_hotel_detail
   price_list = HotelPrice.price_detail(customer_type, days_counts, hotel_list)
-  rating_list = [hotel_list[0].rating, hotel_list[0].rating, hotel_list[0].rating]
-  PriceCalculator.compare_price(price_list, rating_list)
+  rating_list = [hotel_list[0].rating, hotel_list[1].rating, hotel_list[2].rating]
+  hotel_name = PriceCalculator.compare_price(price_list, rating_list)
 end

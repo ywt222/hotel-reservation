@@ -22,7 +22,6 @@ class PriceCalculator
         cheapest_price = (temp_rating < ridgewood_rating ) ? (ridgewood_price) : (temp_price)
       end
       hotel_name = (cheapest_price == ridgewood_price) ? ('Ridgewood') : (temp_hotel_name)
-      p hotel_name
     end
   end
 end
