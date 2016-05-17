@@ -14,4 +14,5 @@ class Main
   price_list = HotelPrice.price_detail(customer_type, days_counts, hotel_list)
   rating_list = [hotel_list[0].rating, hotel_list[1].rating, hotel_list[2].rating]
   hotel_name = PriceCalculator.compare_price(price_list, rating_list)
+  p hotel_name
 end
